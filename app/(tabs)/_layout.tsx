@@ -1,16 +1,27 @@
-import { IconSymbol } from '@/components/ui/IconSymbol';
+import TabBar from '@/components/TabBar';
 import { Tabs } from 'expo-router';
 import React from 'react';
 
 export default function TabLayout() {
 
   return (
-    <Tabs>
+    <Tabs tabBar={(props) => <TabBar {...props} activeColor="#FFF" inactiveColor="#222" />}>
       <Tabs.Screen
         name="index"
         options={{
           title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="search"
+        options={{
+          title: 'Search',
+        }}
+      />
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: 'Settings',
         }}
       />
     </Tabs>
