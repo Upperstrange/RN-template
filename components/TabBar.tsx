@@ -1,3 +1,4 @@
+import { Colors } from '@/constants/Colors';
 import { BottomTabNavigationEventMap } from '@react-navigation/bottom-tabs';
 import { NavigationHelpers, ParamListBase, TabNavigationState } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react';
@@ -69,7 +70,7 @@ export default function TabBar({
         },
         highlight: {
             position: 'absolute',
-            backgroundColor: '#723FEB',
+            backgroundColor: Colors.highlight,
             borderRadius: 30,
             marginHorizontal: 12,
             height: dimensions.height - 15,
