@@ -10,18 +10,21 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Home',
+          headerShown: false
         }}
       />
       <Tabs.Screen
         name="search"
         options={{
           title: 'Search',
+          headerShown: false
         }}
       />
       <Tabs.Screen
         name="settings"
         options={{
           title: 'Settings',
+          headerShown: false
         }}
       />
     </Tabs>
