@@ -1,5 +1,4 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { Text, View } from 'react-native'
 
 function settings() {
   return (
@@ -8,7 +7,5 @@ function settings() {
     </View>
   )
 }
-
-const styles = StyleSheet.create({})
 
 export default settings

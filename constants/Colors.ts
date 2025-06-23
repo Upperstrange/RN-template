@@ -13,7 +13,10 @@ export const Colors = {
   },
   dark: {
     text: '#ECEDEE',
-    background: '#151718',
+    background: '#0C111A',
+    accent: '#77A1D2',
+    lightAccent: '#88AFDD',
+    white: '#F5F5F5',
     tint: tintColorDark,
     icon: '#9BA1A6',
     tabIconDefault: '#9BA1A6',

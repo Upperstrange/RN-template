@@ -1,26 +1,20 @@
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
+import { AuthProvider } from "@/lib/auth/auth-provider";
+import { useFonts } from "expo-font";
+import "react-native-reanimated";
+import LayoutWithAuth from "./_layout-with-auth";
 import "./globals.css";
 
 export default function RootLayout() {
-
   const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
   });
-
   if (!loaded) {
-    // Async font loading only occurs in development.
     return null;
   }
 
   return (
-    <>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </>
+    <AuthProvider>
+      <LayoutWithAuth/>
+    </AuthProvider>
   );
 }

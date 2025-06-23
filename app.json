@@ -1,22 +1,24 @@
 {
   "expo": {
-    "name": "RN-template",
-    "slug": "RN-template",
+    "name": "Habito",
+    "slug": "habito",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "rntemplate",
+    "scheme": "habito",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tekibo.habito"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.tekibo.habito"
     },
     "web": {
       "bundler": "metro",
